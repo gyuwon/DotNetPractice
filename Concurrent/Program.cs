@@ -13,7 +13,7 @@ namespace Concurrent
         {
             int degreeOfParallelism = 50;
 
-            var payloads = new List<int>(Enumerable.Range(0, 1000).Select(i => i));
+            var payloads = new List<int>(Enumerable.Range(0, 1000));
             Action<int> proc = _ => Thread.Sleep(10);
 
             int workerThreads, completionPortThreads;
