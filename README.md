@@ -1,2 +1,2 @@
-DotNetPractices
-===============
+DotNetPractice
+==============
