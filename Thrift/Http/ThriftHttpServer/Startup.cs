@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
-using System.Web;
 using Owin;
-using Thrift.Protocol;
 using Thrift.Transport;
 
 namespace ThriftServer.Http
@@ -16,14 +13,9 @@ namespace ThriftServer.Http
         {
         }
 
-        public Task Invoke(IDictionary<string, object> environment)
+        public Task Invoke(IDictionary<string, dynamic> env)
         {
-            return Task.Factory.StartNew(() =>
-            {
-                Stream request = environment["owin.RequestBody"] as Stream;
-                Stream response = environment["owin.ResponseBody"] as Stream;
-                this.ProcessRequest(request, response);
-            });
+            return Task.Factory.StartNew(() => this.ProcessRequest(env["owin.RequestBody"], env["owin.ResponseBody"]));
         }
     }
 
