@@ -151,3 +151,4 @@ $RECYCLE.BIN/
 .DS_Store
 /Thrift/packages
 /Owin/packages
+/Async/packages
