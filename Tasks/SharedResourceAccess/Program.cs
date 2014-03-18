@@ -4,9 +4,9 @@ using System.Threading;
 
 namespace SharedResourceAccess
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             using (Job.StartNew("Without synchronization"))
             {

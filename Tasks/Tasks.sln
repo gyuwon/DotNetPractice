@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedResourceAccess", "Sha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapters", "Chapters\Chapters.csproj", "{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelismPerformance", "ParallelismPerformance\ParallelismPerformance.csproj", "{8DC78286-8FC5-40BF-91A7-A3BB2DBE48AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForAll", "ForAll\ForAll.csproj", "{77A4B0ED-D13D-43E9-B2D1-FCEFEA651F03}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC78286-8FC5-40BF-91A7-A3BB2DBE48AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC78286-8FC5-40BF-91A7-A3BB2DBE48AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC78286-8FC5-40BF-91A7-A3BB2DBE48AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC78286-8FC5-40BF-91A7-A3BB2DBE48AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A4B0ED-D13D-43E9-B2D1-FCEFEA651F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A4B0ED-D13D-43E9-B2D1-FCEFEA651F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A4B0ED-D13D-43E9-B2D1-FCEFEA651F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A4B0ED-D13D-43E9-B2D1-FCEFEA651F03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
