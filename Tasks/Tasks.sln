@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading", "MultiThre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedResourceAccess", "SharedResourceAccess\SharedResourceAccess.csproj", "{9F18DD78-127D-4FAA-8213-75605612200A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapters", "Chapters\Chapters.csproj", "{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9F18DD78-127D-4FAA-8213-75605612200A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F18DD78-127D-4FAA-8213-75605612200A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F18DD78-127D-4FAA-8213-75605612200A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB8BBAD-BFBB-4072-A19C-E06E74839CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
