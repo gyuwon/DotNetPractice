@@ -58,7 +58,7 @@ namespace ContactManager.Test
 
         [TestMethod]
         [ExpectedException(typeof(HttpResponseException))]
-        public void Post_Should_Throw_500_Error_With_Duplicated_Email()
+        public void Post_Should_Throw_Error_With_Duplicated_Email()
         {
             // Setup
             var mock = new Mock<IRepository>();
