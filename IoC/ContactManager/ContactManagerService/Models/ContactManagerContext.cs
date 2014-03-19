@@ -5,6 +5,11 @@ namespace ContactManager.Models
 {
     public class ContactManagerContext : DbContext, IRepository
     {
+        public ContactManagerContext()
+        {
+            this.Database.Log += System.Console.WriteLine;
+        }
+
         public DbSet<Contact> Contacts { get; set; }
 
         IQueryable<Contact> IRepository.Get()

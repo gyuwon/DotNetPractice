@@ -84,6 +84,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Migrations\201403191045333_Init.cs" />
+    <Compile Include="Migrations\201403191045333_Init.Designer.cs">
+      <DependentUpon>201403191045333_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\ContactManagerContext.cs" />
     <Compile Include="Models\IRepository.cs" />
@@ -96,7 +101,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201403191045333_Init.resx">
+      <DependentUpon>201403191045333_Init.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

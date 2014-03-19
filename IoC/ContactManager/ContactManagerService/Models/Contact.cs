@@ -10,7 +10,7 @@ namespace ContactManager.Models
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
-        [Required]
+        [Required, StringLength(64)]
         public string Email { get; set; }
     }
 }

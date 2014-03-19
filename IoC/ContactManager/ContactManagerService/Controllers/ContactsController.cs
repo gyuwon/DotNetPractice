@@ -31,7 +31,7 @@ namespace ContactManager.Controllers
         {
             var entity = this._repo.Get().SingleOrDefault(e => e.Email == contact.Email);
             if (entity != null)
-                throw new HttpResponseException(HttpStatusCode.InternalServerError);
+                throw new HttpResponseException(HttpStatusCode.Conflict);
             this._repo.Add(contact);
             this._repo.SaveChanges();
             return contact;
