@@ -29,9 +29,13 @@ namespace ContactManager.Controllers
 
         public Contact Post(Contact contact)
         {
-            var entity = this._repo.Get().SingleOrDefault(e => e.Email == contact.Email);
+            var query = from e in this._repo.Get()
+                        where e.Email == contact.Email
+                        select e;
+            var entity = query.SingleOrDefault();
             if (entity != null)
                 throw new HttpResponseException(HttpStatusCode.Conflict);
+
             this._repo.Add(contact);
             this._repo.SaveChanges();
             return contact;
