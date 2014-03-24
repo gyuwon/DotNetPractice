@@ -75,7 +75,7 @@ namespace ContactManager.Test
             finally
             {
                 // Verify
-                mock.VerifyAll();
+                mock.Verify(r => r.Get(), Times.Once());
             }
         }
     }
