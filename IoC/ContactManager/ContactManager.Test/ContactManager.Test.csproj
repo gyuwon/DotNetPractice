@@ -95,6 +95,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ContactManager.Models\ContactManager.Models.csproj">
+      <Project>{1ecd9615-095c-49a2-87d9-d6d0fcac41f8}</Project>
+      <Name>ContactManager.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ContactManager.Windows\ContactManager.Windows.csproj">
+      <Project>{ea124df3-fdfc-45f1-a46f-fa9613f30a60}</Project>
+      <Name>ContactManager.Windows</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ContactManagerService\ContactManagerService.csproj">
       <Project>{e7cfa47a-3914-446c-a029-82c4af790cd6}</Project>
       <Name>ContactManagerService</Name>

@@ -89,7 +89,6 @@
       <DependentUpon>201403191045333_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\ContactManagerContext.cs" />
     <Compile Include="Models\IRepository.cs" />
     <Compile Include="NinjectDependencyResolver.cs" />
@@ -105,6 +104,12 @@
     <EmbeddedResource Include="Migrations\201403191045333_Init.resx">
       <DependentUpon>201403191045333_Init.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContactManager.Models\ContactManager.Models.csproj">
+      <Project>{1ecd9615-095c-49a2-87d9-d6d0fcac41f8}</Project>
+      <Name>ContactManager.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

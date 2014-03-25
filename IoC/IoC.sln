@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagerService", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager.Test", "ContactManager\ContactManager.Test\ContactManager.Test.csproj", "{A8320269-E0B2-431B-97F3-4107CFA17032}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager.Windows", "ContactManager\ContactManager.Windows\ContactManager.Windows.csproj", "{EA124DF3-FDFC-45F1-A46F-FA9613F30A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager.Models", "ContactManager\ContactManager.Models\ContactManager.Models.csproj", "{1ECD9615-095C-49A2-87D9-D6D0FCAC41F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{A8320269-E0B2-431B-97F3-4107CFA17032}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8320269-E0B2-431B-97F3-4107CFA17032}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8320269-E0B2-431B-97F3-4107CFA17032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA124DF3-FDFC-45F1-A46F-FA9613F30A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA124DF3-FDFC-45F1-A46F-FA9613F30A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA124DF3-FDFC-45F1-A46F-FA9613F30A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA124DF3-FDFC-45F1-A46F-FA9613F30A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECD9615-095C-49A2-87D9-D6D0FCAC41F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECD9615-095C-49A2-87D9-D6D0FCAC41F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECD9615-095C-49A2-87D9-D6D0FCAC41F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECD9615-095C-49A2-87D9-D6D0FCAC41F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
