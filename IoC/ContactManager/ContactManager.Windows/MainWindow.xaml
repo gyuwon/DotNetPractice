@@ -25,9 +25,6 @@
             </Grid.ColumnDefinitions>
             
             <Grid.Resources>
-                <Style TargetType="Button">
-                    <Setter Property="Margin" Value="10" />
-                </Style>
                 <Style TargetType="TextBlock">
                     <Setter Property="HorizontalAlignment" Value="Right" />
                     <Setter Property="VerticalAlignment" Value="Center" />
@@ -40,15 +37,15 @@
             </Grid.Resources>
             
             <TextBlock Text="First Name" />
-            <TextBox Grid.Column="1" Text="{Binding FirstName}" />
+            <TextBox Grid.Column="1" Text="{Binding FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             
             <TextBlock Text="Last Name" Grid.Row="1" />
-            <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding LastName}" />
+            <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding LastName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             
             <TextBlock Text="Email" Grid.Row="2" />
-            <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Email}" />
+            <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
-            <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Add" Command="{Binding Add, Mode=OneWay}" />
+            <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Add" Command="{Binding Add, Mode=OneWay}" Margin="10" />
         </Grid>
         
         <ItemsControl Grid.Column="2" ItemsSource="{Binding ContactList.Contacts}" ItemTemplate="{DynamicResource ContactTemplate}" >

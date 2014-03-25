@@ -14,7 +14,7 @@ namespace ContactManager.ViewModels
 
         public NewContactViewModel()
         {
-            this.Add = new RelayCommand(this.ExecuteAdd);
+            this.Add = new RelayCommand(this.ExecuteAdd, this.CanExecuteAdd);
         }
 
         public string FirstName
@@ -70,6 +70,14 @@ namespace ContactManager.ViewModels
             this.Email = string.Empty;
 
             this.MessengerInstance.Send<UpdateMessage, ContactListViewModel>(UpdateMessage.Instance);
+        }
+
+        private bool CanExecuteAdd()
+        {
+            return
+                string.IsNullOrWhiteSpace(this._firstName) == false &&
+                string.IsNullOrWhiteSpace(this._lastName) == false &&
+                string.IsNullOrWhiteSpace(this._email) == false;
         }
     }
 }
