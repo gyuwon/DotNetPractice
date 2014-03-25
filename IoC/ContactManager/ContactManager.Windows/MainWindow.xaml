@@ -48,7 +48,7 @@
             <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Add" Command="{Binding Add, Mode=OneWay}" Margin="10" />
         </Grid>
         
-        <ItemsControl Grid.Column="2" ItemsSource="{Binding ContactList.Contacts}" ItemTemplate="{DynamicResource ContactTemplate}" >
+        <ItemsControl Grid.Column="2" ItemsSource="{Binding ContactList.Contacts}" ItemTemplate="{DynamicResource ContactTemplate}">
             <ItemsControl.Resources>
                 <DataTemplate x:Key="ContactTemplate">
                     <Grid Margin="10">
@@ -67,6 +67,13 @@
                     </Grid>
                 </DataTemplate>
             </ItemsControl.Resources>
+            <ItemsControl.Template>
+                <ControlTemplate>
+                    <ScrollViewer>
+                        <ItemsPresenter />
+                    </ScrollViewer>
+                </ControlTemplate>
+            </ItemsControl.Template>
         </ItemsControl>
     </Grid>
 </mah:MetroWindow>
